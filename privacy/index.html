@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M5Chat — Privacy Policy</title>
+<meta name="description" content="Privacy policy for M5Chat, the local-first AI chat app for iPhone.">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; background: #12100d; color: #e8e2d6; font: 16px/1.7 Georgia, 'Times New Roman', serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 22px 80px; }
+  h1 { font-size: 28px; letter-spacing: .3px; margin: 0 0 4px; }
+  .accent { color: #d9a441; }
+  .updated { color: #9a927f; font-size: 14px; margin-bottom: 36px; font-family: -apple-system, sans-serif; }
+  h2 { font-size: 19px; margin: 34px 0 10px; color: #f0e9db; }
+  p, li { color: #cfc7b6; }
+  strong { color: #e8e2d6; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-family: -apple-system, sans-serif; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid #2a261f; }
+  th { color: #d9a441; font-weight: 600; }
+  td:first-child { color: #e8e2d6; }
+  a { color: #d9a441; }
+  .card { background: #1a1712; border: 1px solid #2a261f; border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid #2a261f; color: #9a927f; font-size: 13px; font-family: -apple-system, sans-serif; }
+  @media (prefers-color-scheme: light) {
+    body { background: #faf7f0; color: #2b2620; }
+    h2, strong { color: #241f19; }
+    p, li { color: #4a4436; }
+    th { color: #a67718; } td:first-child { color: #241f19; }
+    th, td { border-bottom-color: #e4dcc9; }
+    .card { background: #f1ebdd; border-color: #e4dcc9; }
+    footer { border-top-color: #e4dcc9; color: #8a8270; }
+    .updated { color: #8a8270; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>M5Chat <span class="accent">—</span> Privacy Policy</h1>
+  <p class="updated">Last updated: October 8, 2026</p>
+
+  <p>M5Chat is a local-first AI chat app for iPhone. This policy explains exactly what data leaves your device, who receives it, and when.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li>Your conversations, knowledge base, and settings are stored <strong>only on your iPhone</strong>.</li>
+    <li>When you send a message, the text of that conversation is sent <strong>directly to the AI endpoint you configure</strong>. Depending on the engine you pick, that endpoint is one of: an OpenAI-compatible remote API (OpenAI, Anthropic, Google Gemini, DashScope, Zhipu GLM, Moonshot, Doubao), a self-hosted Ollama or LM Studio instance on your own hardware or LAN, or — for on-device engines (llama.cpp, MLX, Apple Foundation Models) — <strong>nowhere at all</strong>. That is how any AI assistant works: the model must read your request to answer it.</li>
+    <li>Your API keys are stored in the <strong>iOS Keychain</strong> and are sent only to the provider you configured them for. The developer never receives them.</li>
+    <li>When a <strong>knowledge base</strong> is used, relevant document snippets are retrieved on-device and included in the prompt sent to <strong>the same endpoint</strong>. The raw knowledge base and vector index never leave the device.</li>
+    <li>When the agent performs a <strong>web search</strong> or reads a web page at your request, the query or request goes to <strong>that third-party service</strong> — the same request your browser would make.</li>
+    <li>Voice input, when used, is processed by the speech engine you select; on-device engines keep audio on the phone.</li>
+  </ul>
+
+  <div class="card">
+    <strong>We have no servers.</strong> M5Chat has <strong>no analytics SDKs, no advertising, no crash reporting, no tracking, and no accounts</strong>. We (the developer) receive nothing.
+  </div>
+
+  <h2>Data disclosure summary (App Store label)</h2>
+  <p>M5Chat discloses: <strong>Other User Content — not linked to identity — not used for tracking — App Functionality</strong>. This reflects that conversation text is transmitted to the AI endpoint you configure and retained by them beyond the duration of a single request. Nothing else is collected.</p>
+
+  <h2>Permissions</h2>
+  <p>M5Chat asks for permissions only when you use the matching feature:</p>
+  <ul>
+    <li><strong>Photo library</strong>: when you attach a photo to a message.</li>
+    <li><strong>Microphone</strong>: when you use voice input.</li>
+    <li><strong>File access</strong>: only documents you explicitly pick to import into the knowledge base.</li>
+    <li><strong>Clipboard</strong>: read only when you paste.</li>
+  </ul>
+
+  <h2>Your control</h2>
+  <ul>
+    <li>Choose a fully on-device engine (llama.cpp / MLX / Apple Foundation Models) and <strong>nothing ever leaves your phone</strong>.</li>
+    <li>Switch engines, edit or delete any conversation at any time.</li>
+    <li>Export or delete your data from within the app.</li>
+    <li>Delete the app — everything goes with it. There is nothing on our side to delete, because there is nothing on our side.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:support@m5chat.app">support@m5chat.app</a></p>
+
+  <footer>M5Chat · Local-first AI chat for iPhone</footer>
+</main>
+</body>
+</html>
